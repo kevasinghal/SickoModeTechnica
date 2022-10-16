@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Log In</title>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -19,7 +20,7 @@ body{
     background-color: #080710;
 }
 .background{
-    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),url('../Assets/backgroundexpenses.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),url('../Assets/backgroundexpense.jpg');
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -29,8 +30,6 @@ body{
     left: 50%;
     top: 50%;
 }
-
-
 form{
     height: 520px;
     width: 400px;
@@ -90,6 +89,11 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
 .social{
   margin-top: 30px;
   display: flex;
@@ -114,7 +118,6 @@ button{
 }
 
 </style>
-
 </head>
 <body>
     <div class="background"></div>
@@ -127,8 +130,8 @@ button{
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <a href="./dashboard.html"><button class="btn">Log In</button></a>
-
+        <button><a href="./dashboard.html">Log In</a></button>
+        
         <div class="social">
           <div class="go"><i class="fab fa-google"></i>  Google</div>
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
